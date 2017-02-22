@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>chatterbox</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <!-- your scripts -->
+    <script src="env/config.js"></script>
+    <script src="scripts/app.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <h1>chatterbox</h1>
+
+      <div id= "rooms">
+        Room:
+        <select id="roomSelect"></select>
+      </div>
+      <form action="#" id="send" method="POST">
+        <input type="text" value="message" id="message"/>
+        <input type="submit" name="Submit" class="submit"/>
+      </form>
+    </div>
+      <!-- Your HTML goes here! -->
+    <div id="chats"></div>
+    <script>
+      $(function(){
+        app.init();
+      });
+    </script>
+  </body>
+  <!-- dependencies -->
+</html>
+
+
+<!-- <form action="/action_page.php">
+  Username:<br>
+  <input type="text" name="Username" value="Mickey"><br><br>
+  <input type="submit" value="Submit">
+</form> -->
